@@ -1,0 +1,124 @@
+/*########### GENERAL ########################*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+  --primary-color: hsl(243, 100%, 69%);
+  --light-font-color: hsl(244, 16%, 66%);
+  --dark-font-color: hsl(245, 8%, 32%);
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+
+  display: grid;
+  grid-template-areas:
+    'upper upper'
+    'main aside'
+    'footer footer';
+  grid-template-rows: 1fr 40.9rem 1fr;
+  grid-template-columns: 1fr 1fr;
+}
+
+html,
+body {
+  width: min(136.6rem, 100%);
+  height: 100%;
+  margin-inline: auto;
+}
+
+/*########### MAIN ########################*/
+
+main {
+  padding-top: 5.4rem;
+  margin-left: 12.3rem;
+  grid-area: main;
+  width: 49.4rem;
+}
+main h1 {
+  font-weight: 700;
+  font-size: 3.6rem;
+  color: var(--primary-color);
+  text-transform: uppercase;
+  letter-spacing: 0.105em;
+  line-height: 5.4rem;
+}
+
+ul {
+  display: flex;
+  justify-content: space-between;
+  color: var(--light-font-color);
+}
+
+ul#texts {
+  padding-inline: 2rem;
+  padding-top: 1.9rem;
+}
+
+li {
+  display: flex;
+}
+
+#timer {
+  font-size: 7.2rem;
+  font-weight: 400;
+  color: var(--dark-font-color);
+  line-height: 10.8rem;
+  height: 8rem;
+}
+
+#seconds {
+  width: 9rem;
+  justify-content: center;
+}
+
+/*########### ASIDE ########################*/
+
+aside {
+  padding-top: 1.7rem;
+  padding-right: 6rem;
+  padding-left: 8.2rem;
+  grid-area: aside;
+}
+
+/*########## SECTION ########################*/
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 4.6rem;
+  gap: 3.1rem;
+}
+
+section h4 {
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 2.1rem;
+  color: var(--light-font-color);
+}
+
+section a {
+  text-decoration: none;
+  background-color: var(--primary-color);
+  padding: 1rem 3.2rem 1.6rem 3.2rem;
+  color: white;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  border-radius: 1rem;
+}
+
+/*########## DECORATION ########################*/
+
+footer {
+  grid-area: footer;
+}
+
+.topPicture {
+  grid-area: upper;
+}
